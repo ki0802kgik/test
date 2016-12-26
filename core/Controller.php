@@ -30,6 +30,7 @@ abstract class Controller
         $this->response    = $application->getResponse();
         $this->session     = $application->getSession();
         $this->db_manager  = $application->getDbManager();
+        var_dump($this->db_manager);
     }
 
     /**
