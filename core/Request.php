@@ -15,7 +15,8 @@ class Request
     public function isPost()
     {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            return true;
+            var_dump($_SERVER);
+        	return true;
         }
 
         return false;
@@ -63,7 +64,7 @@ class Request
         if (!empty($_SERVER['HTTP_HOST'])) {
             return $_SERVER['HTTP_HOST'];
         }
-        
+
         return $_SERVER['SERVER_NAME'];
     }
 
